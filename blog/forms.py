@@ -1,10 +1,10 @@
 from django import forms
 from .models import character
 
-class characterform (form.ModelForm):
-    class meta:
+class CharacterForm (forms.ModelForm):
+    class Meta:
         models = character
-        description = ["character_name","worldview","nameperson","lvlcharacter","thedeity","homeland","race","size","age","height","weight","hair","eye"]
+        """description = ["character_name","worldview","nameperson","lvlcharacter","thedeity","homeland","race","size","age","height","weight","hair","eye"]
         abilities = ["srtength_ability_score","srtength_ability_modifier","srtength_temp_adjustment","srtength_temp_modifier","dexterity_ability_score","dexterity_ability_modifier","dexterity_temp_adjustment",
                      "dexterity_temp_modifier","constitution_ability_score","constitution_ability_modifier","constitution_temp_adjustment","constitution_temp_modifier","intelligence_ability_score","intelligence_ability_modifier","intelligence_temp_adjustment","intelligence_temp_modifier","wisdom_ability_score","wisdom_ability_modifier","wisdom_temp_adjustment","wisdom_temp_modifier","charisma_ability_score","charisma_ability_modifier","charisma_temp_adjustment","charisma_temp_modifier"]
         armor = ["armor_class_total","armor_class_bonus","armor_class_shield_bonus","armor_class_dex_modifier","armor_class_size_modifier","armor_class_natural_armor","armor_class_deflection_modifier","armor_class_misc_modifier","touch_armor_class","flat_footed_armor_class","armor_class_modifier"]
@@ -21,8 +21,8 @@ class characterform (form.ModelForm):
         weapon_four = ["weapon_four_name","weapon_four_attack_bonus","weapon_four_critical","weapon_four_type","weapon_four_range","weapon_four_ammunition","weapon_four_damage"]
         weapon_five = ["weapon_five_name","weapon_five_attack_bonus","weapon_five_critical","weapon_five_type","weapon_five_range","weapon_five_ammunition","weapon_five_damage"]
         skills = ["skill_acrobatics_total_bonus","skill_acrobatics_ranks","skill_acrobatics_misc_mod","skill_acrobatics_class_skill","skill_acrobatics_trained_only","skill_appraise_total_bonus","skill_appraise_ranks","skill_appraise_misc_mod","skill_appraise_class_skill","skill_appraise_trained_only","skill_bluff_total_bonus","skill_bluff_ranks","skill_bluff_misc_mod","skill_bluff_class_skill","skill_bluff_trained_only","skill_climb_total_bonus","skill_climb_ranks","skill_climb_misc_mod","skill_climb_class_skill","skill_climb_trained_only","skill_craft_one_total_bonus","skill_craft_one_ranks","skill_craft_one_misc_mod","skill_craft_one_class_skill","skill_craft_one_trained_only","skill_craft_two_total_bonus","skill_craft_two_ranks","skill_craft_two_misc_mod","skill_craft_two_class_skill","skill_craft_two_trained_only","skill_craft_three_total_bonus","skill_craft_three_ranks","skill_craft_three_misc_mod","skill_craft_three_class_skill","skill_craft_three_trained_only","skill_diplomacy_total_bonus","skill_diplomacy_ranks","skill_diplomacy_misc_mod","skill_diplomacy_class_skill","skill_diplomacy_trained_only","skill_disable_device_total_bonus","skill_disable_device_ranks","skill_disable_device_misc_mod","skill_disable_device_class_skill","skill_disable_device_trained_only","skill_disguese_total_bonus","skill_disguese_ranks","skill_disguese_misc_mod","skill_disguese_class_skill","skill_disguese_trained_only","skill_escape_artist_total_bonus","skill_escape_artist_ranks","skill_escape_artist_misc_mod","skill_escape_artist_class_skill","skill_escape_artist_trained_only","skill_fly_total_bonus","skill_fly_ranks","skill_fly_misc_mod","skill_fly_class_skill","skill_fly_trained_only","skill_handle_animal_total_bonus","skill_handle_animal_ranks","skill_handle_animal_misc_mod","skill_handle_animal_class_skill","skill_handle_animal_trained_only","skill_heal_total_bonus","skill_heal_ranks","skill_heal_misc_mod","skill_heal_class_skill","skill_heal_trained_only","skill_intimidate_total_bonus","skill_intimidate_ranks","skill_intimidate_misc_mod","skill_intimidate_class_skill","skill_intimidate_trained_only"]
-
-        characterone = [
+"""
+        fields = [
 "character_name",
 "worldview",
 "nameperson",
@@ -40,7 +40,8 @@ class characterform (form.ModelForm):
 "srtength_ability_score",
 "srtength_ability_modifier",
 "srtength_temp_adjustment",
-"srtength_temp_modifier",",dexterity_ability_score",
+"srtength_temp_modifier",
+"dexterity_ability_score",
 "dexterity_ability_modifier",
 "dexterity_temp_adjustment",
 "dexterity_temp_modifier",
@@ -53,10 +54,12 @@ class characterform (form.ModelForm):
 "intelligence_temp_adjustment",
 "intelligence_temp_modifier",
 "wisdom_ability_score",
-"wisdom_ability_modifier",",wisdom_temp_adjustment",
+"wisdom_ability_modifier",
+"wisdom_temp_adjustment",
 "wisdom_temp_modifier",
 "charisma_ability_score",
-"charisma_ability_modifier",",charisma_temp_adjustment",
+"charisma_ability_modifier",
+"charisma_temp_adjustment",
 "charisma_temp_modifier",
 "armor_class_total",
 "armor_class_bonus",
@@ -467,5 +470,4 @@ class characterform (form.ModelForm):
 "spell_save_dc_lvl9",
 "spells_per_day_lvl9",
 "spells_bonus_lvl9",
-"conditional_modifiers",
-]
+"conditional_modifiers",]

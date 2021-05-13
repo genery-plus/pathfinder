@@ -18,6 +18,7 @@ class character(models.Model):
     race = models.TextField()
     size = models.TextField()
     size = models.TextField()
+    floor = models.TextField()
     age = models.TextField()
     height = models.TextField()
     weight = models.TextField()
@@ -110,9 +111,9 @@ class character(models.Model):
     # cmd
     cmd_total = models.TextField()
     cmd_base_attack_bonus = models.TextField()
-    cmd_base_attack_bonus = models.TextField()
     cmd_dexterity_modifier = models.TextField()
     cmd_size_modifier = models.TextField()
+    cmd_strength_modifier = models.TextField()
     # weapon_one
     weapon_one_name = models.TextField()
     weapon_one_attack_bonus = models.TextField()
