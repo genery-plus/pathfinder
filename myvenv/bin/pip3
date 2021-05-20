@@ -1,4 +1,6 @@
-#!/home/student/pathfinder/myvenv/bin/python3
+#!/bin/sh
+'''exec' "/home/student/Рабочий стол/pathfinder/myvenv/bin/python3" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

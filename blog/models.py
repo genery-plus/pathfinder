@@ -455,7 +455,7 @@ class character(models.Model):
     spells_known_lvl0 = models.TextField()
     spell_save_dc_lvl0 = models.TextField()
     spells_per_day_lvl0 = models.TextField()
-    spells_bonus_lvl0 = models.IntegerField()
+    spells_bonus_lvl0 = models.TextField()
     # lvl1
     spells_known_lvl1 = models.TextField()
     spell_save_dc_lvl1 = models.TextField()
