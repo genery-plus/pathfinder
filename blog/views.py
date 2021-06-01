@@ -12,3 +12,5 @@ def saveforms (request):
         return redirect("saveforms")
     return render(request,"main.html",{form: form})
 
+def index (request):
+    return  render(request,"index.html",{})

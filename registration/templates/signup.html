@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Салам</title>
-</head>
-<body>
-{% for fields in form %}
-{{ fields }}
-{% endfor %}
-</body>
-</html>
+{% block title %}Зарегистрироваться{% endblock %}
+{% block content %}
+
+<form method="post" action="{% url 'signup' %}">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Зарегистрироваться">
+</form>
+
+{% endblock %}
+

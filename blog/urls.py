@@ -2,5 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.saveforms, name="saveforms"),
+    path("",views.index, name = "index"),
+    path("abc", views.saveforms, name="saveforms"),
 ]
