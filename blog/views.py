@@ -10,7 +10,7 @@ def saveforms (request):
         a = form.save(commit=False)
         a.save()
         return redirect("saveforms")
-    return render(request,"./main.html", {form: form})
+    return render(request,"./main.html", {'form': form})
 
 def index (request):
     return  render(request,"index.html",{})
