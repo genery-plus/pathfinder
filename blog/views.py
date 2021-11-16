@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import character
+from .models import Сharacter
 from .forms import CharacterForm
-
 
 
 def saveforms (request):
@@ -9,13 +8,14 @@ def saveforms (request):
     if request.method=="POST" and form.is_valid():
         a = form.save(commit=False)
         a.save()
-        return redirect("saveforms")
-    return render(request,"./main.html", {form: form})
+        return redirect("index")
+    return render(request, 'main.html', {'form': form})
+
 
 def index (request):
     return  render(request,"index.html",{})
 
 
 #страница main
-def main (request):
-    return  render(request,"main.html",{})
+#def main (request):
+    #return  render(request,"main.html",{})

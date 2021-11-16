@@ -1,4 +1,4 @@
-#!/home/student/Рабочий стол/pathfinder/myvenv/bin/python3
+#!/home/student/Рабочий стол/one/myvenv/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

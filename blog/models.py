@@ -1,12 +1,11 @@
 
-
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
 
 
-class character(models.Model):
+class Сharacter(models.Model):
 
     # description - описание
     character_name = models.TextField()
